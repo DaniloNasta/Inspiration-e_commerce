@@ -1,0 +1,21 @@
+.passIcon {
+    margin-left: -50px;
+    cursor: pointer;
+}
+
+.formPass {
+    width: 98%;
+}
+
+.formCard {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 75%;
+}
+
+.bgForm {
+    background: linear-gradient(white, rgba(0,0,0,0.3), white), url(../media/internet-g1fb3b8482_1920.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}

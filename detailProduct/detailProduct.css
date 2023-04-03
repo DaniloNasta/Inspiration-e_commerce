@@ -1,0 +1,49 @@
+.rating {
+    font-size: 25px;
+    overflow:hidden;
+}
+
+.rating a{
+    color: #aaa;
+    text-decoration: none;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s;
+}
+
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a		{
+    color: orange;
+    cursor: pointer;
+}
+
+.rating2 {
+    direction: rtl;
+}
+
+.rating2 a {
+    float:none;
+}
+
+#productImg {
+    height: 300px;
+}
+
+.productBcg {
+    background: linear-gradient(135deg,#F83A26, #FFC344,#F83A26, #FFC344);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgCard{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

@@ -1,0 +1,55 @@
+.bgAllCard {
+    background: linear-gradient(white, rgba(0,0,0,0.3), white), url(../media/internet-g1fb3b8482_1920.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.searchInput {
+    height: 38px;
+}
+
+.product-card {
+    height: 400px;
+    transition: 0.3s ease-in-out;
+}
+
+.product-card:hover{
+    height: 100%;
+}
+
+.logo-cart{
+    position: relative;
+    padding-top: 50px;
+    top:-50px;
+    z-index: 1;
+}
+
+.cardBody{
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.product-card:hover .cardBody{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.scorriGiu{
+    height: 30px;
+    width: 30px;
+    margin-top: -100px;
+    margin-left: 45%;
+}
+
+.filterBar{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 999;
+}

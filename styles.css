@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Rubik+Spray+Paint&display=swap');
+
+:root {
+  --t-color:#2D2942;
+  --p-color:#F83A26;
+  --s-color:#FFC344;
+  --acc-color:#D1D4D7;
+}
+
+.tx-t {color: var(--t-color);}
+.tx-p {color: var(--p-color);}
+.tx-s {color: var(--s-color);}
+.tx-acc{color: var(--acc-color);}
+.font-t{font-family: 'Rubik Spray Paint', cursive;}
+.font-p{font-family: 'Inter', sans-serif;}
+.font-s{font-family: 'Poppins', sans-serif;}
+
+
+/* navbar */
+.logoGB{
+  height: 80px;
+}
+
+.borderNavMenu{
+  position: relative;
+  overflow: hidden;
+}
+
+.borderNavMenu::before{
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: var(--p-color);
+  bottom: 0;
+  left: -100%;
+  transition: 0.4s all;
+}
+
+.borderNavMenu:hover::before{
+  transform: translateX(100%);
+}
+
+.btnLog{
+  border-radius: 25px;
+  border: 0px;
+  background: linear-gradient(135deg,#F83A26, #FFC344);
+  color: white;
+  padding: 10px 25px ;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  transition: 0.4s all ease-in-out;
+}
+
+.btnLog:hover{
+  opacity: 1;
+}
+
+.btnSign {
+  border-radius: 25px;
+  border: 2px solid #F83A26;
+  background: transparent;
+  padding: 8px 23px ;
+  color: #F83A26;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+/* header */
+header {
+  position: relative;
+  background: linear-gradient(white, rgba(0,0,0,0.1), white);
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(white, rgba(0,0,0,0.1), white);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+
+/* compra-vendi */
+.btnCompra{
+  background: linear-gradient(white, rgba(0,0,0,0), white), url(./media/internet-g1fb3b8482_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 315px;
+}
+
+.btnVendi {
+  background: linear-gradient(white, rgba(0,0,0,0), white), url(./media/shopping-gfb538d4fd_1280.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 315px;
+}
+
+
+/* offerte */
+.offBcg{
+  background: linear-gradient(white, rgba(0,0,0,0.3), white), url(./media/internet-g1fb3b8482_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product-card {
+  max-width: 355px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 20px 30px 30px 30px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+}
+
+.rowCard:hover > :not(:hover){
+  opacity: 0.4;
+}
+
+.logo-cart img{
+  height: 225px;
+  width: 250px;
+  object-fit: cover;
+  transition: all ease-in-out .4s;
+  transform: scale(1);
+}
+
+.product-card:hover .logo-cart img{
+  transform: scale(1.1);
+}
+
+.cardTitle{
+  font-size: 24px;
+  font-weight: 500;
+  color: #161616;
+}
+.cardDetails p{
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  text-align: justify;
+}
+
+.colorPrice{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.priceNum{
+  font-size: 25px;
+  font-weight: 600;
+  color: #707070;
+}
+
+.button{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.button .button-layer{
+  position: absolute;
+  height: 100%;
+  width: 300%;
+  left: -100%;
+  background-image: linear-gradient(135deg,#F83A26, #FFC344,#F83A26, #FFC344);
+  transition: all 0.4s ease;
+  border-radius: 25PX;
+}
+
+.button:hover .button-layer{
+  left: 0;
+}
+
+.button button{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+
+/* caricaAnnuncio */
+.cta {
+  position: relative;
+  height: 0vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cta video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.cta .container {
+  position: relative;
+  z-index: 2;
+}
+
+.cta .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #252525;
+  opacity: 0;
+  z-index: 1;
+}
